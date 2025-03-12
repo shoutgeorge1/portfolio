@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Aguilar - Digital Marketing Portfolio</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; padding: 20px; max-width: 800px; margin: auto; }
+        h1, h2 { color: #333; }
+        a { color: #007BFF; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .project { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>George Aguilar</h1>
+    <h2>Google Ads & SEO Specialist</h2>
+    <p>Email: <a href="mailto:shoutgeorge1@gmail.com">shoutgeorge1@gmail.com</a></p>
+    <p>Phone: 951-481-9612</p>
+    
+    <h2>Portfolio</h2>
+    
+    <div class="project">
+        <h3><a href="https://freshstartinfo.org/wipeout-tax-debt/" target="_blank">FreshStartInfo.org – PPC Marketing Funnel</a></h3>
+        <p>A marketing vehicle designed to warm up PPC traffic for tax relief leads. Uses long-form content and video to drive conversions.</p>
+    </div>
+    
+    <div class="project">
+        <h3><a href="https://hullabaloosales.com" target="_blank">HullabalooSales.com – High-Traffic E-Commerce SEO Success</a></h3>
+        <p>Built from scratch, optimized for SEO. Now attracts 25,000-30,000 organic visitors per month.</p>
+    </div>
+    
+    <div class="project">
+        <h3><a href="https://arizonahuntingclub.com" target="_blank">ArizonaHuntingClub.com – Shopify Site That Outranked the Original</a></h3>
+        <p>Designed for the hunting industry, this site performed so well that the company abandoned their original domain.</p>
+    </div>
+    
+    <div class="project">
+        <h3><a href="https://www.magicjump.com" target="_blank">MagicJump.com – UI/UX & SEO for Custom PHP Platform</a></h3>
+        <p>Optimized UI/UX and SEO for a national B2B brand, improving user engagement and conversions.</p>
+    </div>
+</body>
+</html>
