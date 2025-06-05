@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phoenix ED Therapy Device</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+ body {
+  background: linear-gradient(180deg, #0a0a0a, #1a1a2e);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+ }
+ .glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+ }
+ .glow-button {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+  box-shadow: 0 10px 30px rgba(96, 165, 250, 0.3);
+ }
+ .hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
+ }
+ .gradient-text {
+  background: linear-gradient(90deg, #60a5fa, #34d399);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ }
+ .fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+ .fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+ }
+ @keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+ }
+ .pulse-dot {
+  width: 8px;
+  height: 8px;
+  background: #34d399;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-right: 6px;
+  animation: pulse-dot 1s infinite;
+ }
+</style>
+</head>
+<body class="text-gray-200">
+<!-- Hero -->
+<section class="min-h-screen flex flex-col justify-center items-center text-center space-y-8 px-4">
+ <div class="flex items-center text-sm font-semibold uppercase tracking-wide">
+  <span class="pulse-dot"></span>FDA-REGISTERED MEDICAL DEVICE
+ </div>
+ <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
+  The Future<br><span class="gradient-text">of ED Treatment</span><br>is Here
+ </h1>
+ <p class="max-w-xl mx-auto text-lg">Phoenix uses breakthrough acoustic wave therapy to rebuild your body from within. No pills. No side effects. Just results that last.</p>
+ <ul class="space-y-2 text-left max-w-md mx-auto">
+  <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.486 8.486a1 1 0 01-1.414 0L3.293 11.5a1 1 0 011.414-1.414l3.1 3.1 7.778-7.778a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Treats the root cause, not just symptoms</li>
+  <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.486 8.486a1 1 0 01-1.414 0L3.293 11.5a1 1 0 011.414-1.414l3.1 3.1 7.778-7.778a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Results last 6+ months per treatment cycle</li>
+  <li class="flex items-start"><svg class="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8.486 8.486a1 1 0 01-1.414 0L3.293 11.5a1 1 0 011.414-1.414l3.1 3.1 7.778-7.778a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>Used by 60,000+ men worldwide</li>
+ </ul>
+ <div class="flex space-x-4 mt-4">
+  <button class="glow-button hover-lift px-6 py-3 rounded font-bold">Get Phoenix - Save $200 Today</button>
+  <button class="px-6 py-3 rounded border border-blue-500 hover:bg-blue-500 hover-lift transition">Watch How It Works</button>
+ </div>
+ <div class="glass-card p-6 rounded-xl mt-8 flex space-x-6 items-center">
+  <img src="https://via.placeholder.com/200x200?text=Device" alt="Phoenix Device" class="rounded-lg">
+  <div class="text-left space-y-2">
+   <div class="text-2xl font-bold"><span id="stat-success" class="counter">94</span>% Success Rate</div>
+   <div class="text-xl font-semibold"><span id="stat-weeks" class="counter">4</span> Week Protocol</div>
+   <div class="text-xl font-semibold"><span id="stat-men" class="counter">60000</span>+ Men Treated</div>
+  </div>
+ </div>
+</section>
+<!-- Social Proof -->
+<section class="fade-section py-20 px-4" id="social-proof">
+ <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-6">Over 3,200 Five-Star Reviews</h2>
+ <p class="text-center mb-10">Real men sharing their Phoenix success stories</p>
+ <div class="max-w-4xl mx-auto grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="glass-card p-6 rounded-xl space-y-4">
+   <div class="flex items-center"><span class="text-yellow-400">★★★★★</span></div>
+   <p>"Phoenix changed my life. After 3 weeks, I felt like I was 25 again. My wife noticed immediately."</p>
+   <div class="flex items-center space-x-2 text-sm"><span class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">J</span><span>James R. • Verified Purchase • Age 52</span></div>
+  </div>
+  <div class="glass-card p-6 rounded-xl space-y-4">
+   <div class="flex items-center"><span class="text-yellow-400">★★★★★</span></div>
+   <p>"Tried pills for years. Phoenix actually fixed the problem instead of masking it. No more side effects."</p>
+   <div class="flex items-center space-x-2 text-sm"><span class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center">M</span><span>Michael T. • Verified Purchase • Age 45</span></div>
+  </div>
+  <div class="glass-card p-6 rounded-xl space-y-4">
+   <div class="flex items-center"><span class="text-yellow-400">★★★★★</span></div>
+   <p>"The science is real. My urologist was amazed at my improved blood flow after using Phoenix."</p>
+   <div class="flex items-center space-x-2 text-sm"><span class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center">D</span><span>David L. • Verified Purchase • Age 58</span></div>
+  </div>
+ </div>
+</section>
+<!-- How It Works -->
+<section class="fade-section py-20 px-4" id="how-it-works">
+ <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-6">How Phoenix Rebuilds Your Body</h2>
+ <p class="text-center mb-10">Acoustic wave therapy triggers your body's natural healing response to restore blood flow and function</p>
+ <div class="max-w-4xl mx-auto grid gap-6 sm:grid-cols-3">
+  <div class="glass-card p-6 rounded-xl space-y-2">
+   <h3 class="font-bold">Step 1: Targeted Acoustic Waves</h3>
+   <p>Phoenix delivers precise acoustic pulses to penile tissue, stimulating cellular regeneration and blood vessel growth.</p>
+  </div>
+  <div class="glass-card p-6 rounded-xl space-y-2">
+   <h3 class="font-bold">Step 2: New Blood Vessel Formation</h3>
+   <p>Your body responds by creating new blood vessels and improving existing circulation to the penis.</p>
+  </div>
+  <div class="glass-card p-6 rounded-xl space-y-2">
+   <h3 class="font-bold">Step 3: Lasting Performance</h3>
+   <p>Enhanced blood flow leads to stronger, more reliable erections that last months after treatment.</p>
+  </div>
+ </div>
+</section>
+<!-- Timeline -->
+<section class="fade-section py-20 px-4" id="timeline">
+ <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-6">Your Transformation Timeline</h2>
+ <p class="text-center mb-10">See when most men experience results with Phoenix</p>
+ <div class="max-w-4xl mx-auto space-y-8">
+  <div class="glass-card p-6 rounded-xl">
+   <h3 class="font-bold">Week 1-2: Initial Response</h3>
+   <p>Cellular healing begins. Some men notice improved morning erections and increased sensitivity.</p>
+  </div>
+  <div class="glass-card p-6 rounded-xl">
+   <h3 class="font-bold">Week 3-4: Breakthrough</h3>
+   <p>Significant improvements in firmness and duration. Confidence returns as performance improves.</p>
+  </div>
+  <div class="glass-card p-6 rounded-xl">
+   <h3 class="font-bold">Week 5-6: Peak Results</h3>
+   <p>Maximum improvement achieved. Spontaneous erections return. Partners notice the difference.</p>
+  </div>
+  <div class="glass-card p-6 rounded-xl">
+   <h3 class="font-bold">6+ Months: Maintenance</h3>
+   <p>Results sustained. Repeat protocol as needed to maintain peak performance long-term.</p>
+  </div>
+ </div>
+</section>
+<!-- Final CTA -->
+<section class="fade-section py-20 px-4" id="final-cta">
+ <h2 class="text-3xl sm:text-4xl font-extrabold text-center mb-6">Ready to Get Your<br>Confidence Back?</h2>
+ <p class="text-center mb-10">Join 60,000+ men who chose Phoenix for lasting ED treatment. Revolutionary science, proven results.</p>
+ <div class="max-w-md mx-auto glass-card p-8 rounded-xl text-center space-y-4">
+  <div class="text-lg font-bold uppercase">Limited Time Offer</div>
+  <div class="text-4xl font-extrabold"><span class="line-through text-gray-400 mr-2">$1,499</span> $1,299</div>
+  <div class="text-green-400 font-semibold">Save $200 Today</div>
+  <ul class="space-y-2">
+   <li>90-day money-back guarantee</li>
+   <li>Free discreet shipping</li>
+   <li>1-year warranty included</li>
+  </ul>
+  <button class="glow-button hover-lift w-full py-3 rounded font-bold mt-4">Get Phoenix Now - Save $200</button>
+  <div class="text-sm text-red-400">Price increases to $1,499 in 48 hours</div>
+ </div>
+</section>
+<script>
+// counter animation
+function animateCounter(id, end, duration) {
+ const el = document.getElementById(id);
+ let start = 0;
+ const step = Math.ceil(duration / end);
+ const timer = setInterval(() => {
+  start++;
+  if (start > end) { clearInterval(timer); return; }
+  el.textContent = start.toLocaleString();
+ }, step);
+}
+animateCounter('stat-success', 94, 800);
+animateCounter('stat-weeks', 4, 800);
+animateCounter('stat-men', 60000, 800);
+
+// intersection observer for fade sections
+const observer = new IntersectionObserver(entries => {
+ entries.forEach(entry => {
+  if (entry.isIntersecting) {
+   entry.target.classList.add('show');
+  }
+ });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-section').forEach(sec => observer.observe(sec));
+</script>
+</body>
+</html>
